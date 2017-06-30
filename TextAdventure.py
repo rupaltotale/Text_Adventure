@@ -19,25 +19,19 @@ if FoodChoice == 1:
 
 if FoodChoice == 2:
     print("You received your salad, but you see that it tastes very plain, so you don't feel like eating it. You want to call over a waiter, but the staff is super busy. You want additional food. Do you continue to eat the plain salad or wait for a waiter to serve you?")
-    EatORWait = int(input("Enter 1 for eating or 2 for waiting \n"))
-    if EatORWait == 1:
+    EatOrWait = int(input("Enter 1 to continue eating or 2 for waiting \n"))
+    if EatOrWait == 1:
         print("You are not full. Do you sit there hungry or leave your date and eat somewhere else?")
-    if EatORWait == 2:
-        print("You've waited for 10 minutes for a waiter to serve you. The waiter offers to give you nachos and beans, so you go home happy and full! :D \n")
-
-
-
-
-"""
-    print("Press 3 for the first option and 4 for the second.\n")
-if FoodChoice == 3:
-    print("After eating most of the salad, you still feel hungry. You go home hungry. :( )\n")
-
-if FoodChoice == 4:
-    print("After waiting for 10 minutes, the waiter offers to give you nachos and beans. But you must wait for another 20 minutes.\n")
-    print("Do you wait for another 20 minutes or do you go home hungry?\n")
-if FoodChoice == 5:
-    print("You go home happy! :)\n")
-if FoodChoice == 6:
-        print("Too bad. You go home hungry :().\n")
-"""
+        EatOrLeave = int(input("Enter 1 to sit there hungry throughout the date or 2 to leave your date"))
+        if EatOrLeave == 1:
+            print("The blind date did not end well anyways. :( \n")
+        if EatOrLeave == 2:
+            print("You are full and ate delicious food  :) \n")
+    if EatOrWait == 2:
+        print("You've waited for 10 minutes for a waiter to serve you. The waiter offers to give you nachos and beans free of charge, but it will take 30 more minutes.\n")
+        print("Do you wait for the meal or go home and cook after the date?\n")
+        MealOrCook = int(input("Enter 1 to wait or 2 to go home \n"))
+        if MealOrCook == 1:
+            print("Yay! You finally got a delicious meal. :D \n")
+        if MealOrCook == 2:
+            print("The blind date did not end well anyways, so you are tired and hungry while going home. :( \n")
