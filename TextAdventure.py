@@ -1,7 +1,6 @@
 
 print("\n")
 
-while True:
     print("You go to a restaurant on a blind date. Do you order a cheesy burrito or an expensive, plain salad? ")
     FoodChoice = int(input("Enter 1 for burrito or 2 for salad \n"))
     if FoodChoice == 1:
